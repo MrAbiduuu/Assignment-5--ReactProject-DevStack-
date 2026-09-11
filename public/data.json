@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "category": "Frontend",
+    "type" : "popular",
+    "description": "A JavaScript library for building fast and interactive user interfaces.",
+    "icon": "react",
+    "environment" : "Beginner-friendly",
+    "color": "#61DAFB",
+    "rating" : 4.9
+  },
+  {
+    "id": 2,
+    "name": "TypeScript",
+    "category": "Language",
+    "type" : "versatile",
+    "description": "A strongly typed programming language built on top of JavaScript.",
+    "icon": "typescript",
+    "environment" : "Beginner-friendly",
+    "color": "#3178C6",
+    "rating" : 4.8
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "category": "Language",
+    "type" : "fast",
+    "description": "A versatile programming language for creating dynamic web applications.",
+    "icon": "javascript",
+    "environment" : "Intermediate",
+    "color": "#F7DF1E",
+    "rating" : 4.8
+  },
+  {
+    "id": 4,
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "type" : "",
+    "description": "A utility-first CSS framework for rapidly building modern interfaces.",
+    "icon": "tailwind",
+    "environment" : "Intermediate",
+    "color": "#06B6D4",
+    "rating" : 4.9
+  },
+  {
+    "id": 5,
+    "name": "Node.js",
+    "category": "Backend",
+    "type" : "standard",
+    "description": "A JavaScript runtime used to build scalable backend applications.",
+    "icon": "nodejs",
+    "environment" : "Intermediate",
+    "color": "#339933",
+    "rating" : 4.8
+  },
+  {
+    "id": 6,
+    "name": "Express.js",
+    "category": "Backend",
+    "type" : "top SQL",
+    "description": "A lightweight Node.js framework for building APIs and web servers.",
+    "icon": "express",
+    "environment" : "Intermediate",
+    "color": "#000000",
+    "rating" : 4.9
+  },
+  {
+    "id": 7,
+    "name": "MongoDB",
+    "category": "Database",
+    "type" : "chase",
+    "description": "A flexible NoSQL database designed for modern applications.",
+    "icon": "mongodb",
+    "environment" : "Beginner-friendly",
+    "color": "#47A248",
+    "rating" : 4.8
+  },
+  {
+    "id": 8,
+    "name": "PostgreSQL",
+    "category": "Database",
+    "type" : "ubiquitos",
+    "description": "A powerful open-source relational database management system.",
+    "icon": "postgresql",
+    "environment" : "Beginner-friendly",
+    "color": "#4169E1",
+    "rating" : 4.9
+  },
+  {
+    "id": 9,
+    "name": "Git",
+    "category": "Tools",
+    "type" : "essential",
+    "description": "A distributed version control system for tracking code changes.",
+    "icon": "git",
+    "environment" : "Intermediate",
+    "color": "#F05032",
+    "rating" : 4.9
+  },
+  {
+    "id": 10,
+    "name": "GitHub",
+    "category": "Tools",
+    "type" : "rebust",
+    "description": "A platform for hosting, collaborating on, and managing Git repositories.",
+    "icon": "github",
+    "environment" : "Intermediate",
+    "color": "#181717",
+    "rating" : 4.6
+  },
+  {
+    "id": 11,
+    "name": "Vite",
+    "category": "Build Tool",
+    "type" : "modern",
+    "description": "A fast modern build tool for frontend development.",
+    "icon": "vite",
+    "environment" : "Beginner-friendly",
+    "color": "#646CFF",
+    "rating" : 4.9
+  },
+  {
+    "id": 12,
+    "name": "Next.js",
+    "category": "Framework",
+    "type" : "container",
+    "description": "A React framework for building fast and production-ready web applications.",
+    "icon": "nextjs",
+    "environment" : "Intermediate",
+    "color": "#000000",
+    "rating" : 4.9
+  }
+]
