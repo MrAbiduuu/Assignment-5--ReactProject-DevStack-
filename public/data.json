@@ -7,7 +7,7 @@
     "description": "A JavaScript library for building fast and interactive user interfaces.",
     "icon": "react",
     "environment" : "Beginner-friendly",
-    "color": "#61DAFB",
+    "color": "#0EA5E9",
     "rating" : 4.9
   },
   {
@@ -18,7 +18,7 @@
     "description": "A strongly typed programming language built on top of JavaScript.",
     "icon": "typescript",
     "environment" : "Beginner-friendly",
-    "color": "#3178C6",
+    "color": "#059669",
     "rating" : 4.8
   },
   {
@@ -29,7 +29,7 @@
     "description": "A versatile programming language for creating dynamic web applications.",
     "icon": "javascript",
     "environment" : "Intermediate",
-    "color": "#F7DF1E",
+    "color": "#EA580C",
     "rating" : 4.8
   },
   {
@@ -40,7 +40,7 @@
     "description": "A utility-first CSS framework for rapidly building modern interfaces.",
     "icon": "tailwind",
     "environment" : "Intermediate",
-    "color": "#06B6D4",
+    "color": "",
     "rating" : 4.9
   },
   {
@@ -62,7 +62,7 @@
     "description": "A lightweight Node.js framework for building APIs and web servers.",
     "icon": "express",
     "environment" : "Intermediate",
-    "color": "#000000",
+    "color": "#2563EB",
     "rating" : 4.9
   },
   {
@@ -73,7 +73,7 @@
     "description": "A flexible NoSQL database designed for modern applications.",
     "icon": "mongodb",
     "environment" : "Beginner-friendly",
-    "color": "#47A248",
+    "color": "#DC2626",
     "rating" : 4.8
   },
   {
@@ -84,7 +84,7 @@
     "description": "A powerful open-source relational database management system.",
     "icon": "postgresql",
     "environment" : "Beginner-friendly",
-    "color": "#4169E1",
+    "color": "#D97706",
     "rating" : 4.9
   },
   {
@@ -95,7 +95,7 @@
     "description": "A distributed version control system for tracking code changes.",
     "icon": "git",
     "environment" : "Intermediate",
-    "color": "#F05032",
+    "color": "#0284C7",
     "rating" : 4.9
   },
   {
@@ -106,7 +106,7 @@
     "description": "A platform for hosting, collaborating on, and managing Git repositories.",
     "icon": "github",
     "environment" : "Intermediate",
-    "color": "#181717",
+    "color": "#0284C7",
     "rating" : 4.6
   },
   {
@@ -117,7 +117,7 @@
     "description": "A fast modern build tool for frontend development.",
     "icon": "vite",
     "environment" : "Beginner-friendly",
-    "color": "#646CFF",
+    "color": "#0891B2",
     "rating" : 4.9
   },
   {
@@ -128,7 +128,7 @@
     "description": "A React framework for building fast and production-ready web applications.",
     "icon": "nextjs",
     "environment" : "Intermediate",
-    "color": "#000000",
+    "color": "#0284C7",
     "rating" : 4.9
   }
 ]

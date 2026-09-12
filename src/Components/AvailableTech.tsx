@@ -4,28 +4,53 @@ import { FaStar } from "react-icons/fa";
 
 const AvailableTech = ({ Technology }) => {
   return (
-    <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 lg:grid-cols-4">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
       <div className="lg:col-span-3">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {Technology.map((Tech: dataTypes) => (
-            <div className="p-5 border rounded-2xl">
-              <div className="flex justify-between">
-                <img src={Tech.icon} alt={Tech.name} />
-                <p>{Tech.type}</p>
+            <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+              <div className="flex items-center justify-between">
+                <img
+                  className="h-12 w-12 object-contain"
+                  src={Tech.icon}
+                  alt={Tech.name}
+                />
+                <p
+                  className="rounded-full px-3 py-1 text-sm"
+                  style={{
+                    backgroundColor: `${Tech.color}20`,
+                    color: Tech.color,
+                  }}
+                >
+                  {Tech.type}
+                </p>
               </div>
-              <h1 className="text-2xl font-bold">{Tech.name}</h1>
-              <p>{Tech.description}</p>
-              <hr className="text-gray-400" />
-              <div className="flex justify-between">
-                <p>{Tech.category}</p>
+
+              <h1 className="mt-5 text-2xl font-bold text-gray-900">
+                {Tech.name}
+              </h1>
+
+              <p className="mt-2 min-h-12 text-sm leading-6 text-gray-600">
+                {Tech.description}
+              </p>
+
+              <hr className="my-5 border-gray-200" />
+
+              <div className="flex items-center justify-between gap-3 text-sm text-gray-500">
+                <p className="bg-gray-100 py-1 px-2 rounded-b-sm text-[#475569] font-semibold">
+                  {Tech.category}
+                </p>
+
                 <p>{Tech.environment}</p>
-                <p className="flex text-center align-bottom">
+
+                <p className="flex items-center gap-1 font-medium text-gray-700">
                   <FaStar className="text-[#FBBF24]" />
                   {Tech.rating}
                 </p>
               </div>
-              <div className="text-center">
-                <button className="btn btn-active bg-black text-white rounded-field w-full">
+
+              <div className="mt-5">
+                <button className="btn btn-active w-full rounded-xl bg-black text-white transition-all duration-300 hover:bg-gray-800">
                   Add to stack
                 </button>
               </div>
@@ -35,7 +60,11 @@ const AvailableTech = ({ Technology }) => {
       </div>
       <div className="lg:col-span-1">
         <div className="rounded-2xl border p-6">
-          <h2 className="text-2xl font-bold">My Stack</h2>
+          <h2 className="text-2xl font-bold">Your Stack</h2>
+          <p className="text-[#94A3B8] py-4">No technology selected yet</p>
+          <p className="w-full rounded-3xl p-8 text-center text-[#94A3B8] border">
+            Your stack is Empty
+          </p>
         </div>
       </div>
     </div>
