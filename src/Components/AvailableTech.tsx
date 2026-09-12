@@ -5,7 +5,7 @@ import { GiCheckMark } from "react-icons/gi";
 import { Bounce, toast, ToastContainer } from "react-toastify";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-const AvailableTech = ({ Technology }) => {
+const AvailableTech = ({ Technology }: { Technology: dataTypes[] }) => {
   const [isTechAdded, setIsTechAdded] = useState<string[]>([]);
   const [stack, setStack] = useState<dataTypes[]>([]);
 
