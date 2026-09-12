@@ -3,12 +3,15 @@ import type { dataTypes } from "../Types/Types";
 import { FaStar } from "react-icons/fa";
 import { GiCheckMark } from "react-icons/gi";
 import { Bounce, toast, ToastContainer } from "react-toastify";
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 const AvailableTech = ({ Technology }) => {
   const [isTechAdded, setIsTechAdded] = useState<string[]>([]);
+  const [stack, setStack] = useState<dataTypes[]>([]);
 
   const handleAddTech = (Tech: dataTypes, name: string) => {
     setIsTechAdded((prev) => [...prev, name]);
+    setStack((prev) => [...prev, Tech]);
 
     toast.success(`${Tech.name} Added Successfully`, {
       position: "bottom-right",
@@ -18,6 +21,18 @@ const AvailableTech = ({ Technology }) => {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
+  };
+
+  const handleRemoveAll = () => {
+    setStack([]);
+    setIsTechAdded([]);
+
+    toast.success("All technologies removed", {
+      position: "bottom-right",
+      autoClose: 3000,
       theme: "light",
       transition: Bounce,
     });
@@ -100,11 +115,54 @@ const AvailableTech = ({ Technology }) => {
         <div className="rounded-2xl border p-6">
           <h2 className="text-2xl font-bold">Your Stack</h2>
 
-          <p className="py-4 text-[#94A3B8]">No technology selected yet</p>
-
-          <p className="w-full rounded-3xl border p-8 text-center text-[#94A3B8]">
-            Your stack is Empty
+          <p className="py-4 mt-2 text-sm text-[#94A3B8]">
+            {stack.length === 0
+              ? "No technology"
+              : stack.length === 1
+                ? `${stack.length} technology`
+                : `${stack.length} technologies`}{" "}
+            selected
           </p>
+
+          {stack.length === 0 ? (
+            <>
+              <p className="w-full rounded-3xl border p-8 text-center text-[#94A3B8]">
+                Your stack is Empty
+              </p>
+            </>
+          ) : (
+            <>
+              <div className="mt-5 space-y-3">
+                {stack.map((Tech) => (
+                  <div
+                    key={Tech.name}
+                    className="flex items-center justify-between gap-3 rounded-xl border py-1.5 px-3"
+                  >
+                    <div className="flex gap-2">
+                      <img
+                        src={Tech.icon}
+                        alt={Tech.name}
+                        className="h-10 w-10 object-contain"
+                      />
+
+                      <div>
+                        <h3 className="font-semibold">{Tech.name}</h3>
+                        <p className="text-sm text-gray-500">{Tech.type}</p>
+                      </div>
+                    </div>
+                    <RiDeleteBin6Line />
+                  </div>
+                ))}
+              </div>
+
+              <button
+                onClick={handleRemoveAll}
+                className="mt-5 w-full rounded-xl bg-red-500 px-4 py-3 font-semibold text-white transition-all duration-300 hover:bg-red-600"
+              >
+                Remove All
+              </button>
+            </>
+          )}
         </div>
       </div>
 
