@@ -1,13 +1,20 @@
 import Logo from "../assets/logo-text.png";
-// import { FiMenu } from "react-icons/fi";
+import { FiMenu } from "react-icons/fi";
+
 const Nav = () => {
   return (
     <nav className="sticky top-0 z-50 mx-auto flex h-20 max-w-7xl items-center justify-between bg-white px-6 shadow-md lg:px-8">
-      <div>
+      <div className="md:hidden">
+        <button>
+          <FiMenu className="text-2xl" />
+        </button>
+      </div>
+
+      <div className="md:mr-auto">
         <img src={Logo} alt="DevStackLogo" />
       </div>
 
-      <div className="flex gap-4 font-medium text-[#475569]">
+      <div className="hidden gap-4 font-medium text-[#475569] md:flex">
         <a href="" className="text-[#D91B7E]">
           Home
         </a>
@@ -19,7 +26,6 @@ const Nav = () => {
 
       <div className="flex gap-4 font-extrabold">
         <button className="btn rounded-xl text-[#334155]">Sign In</button>
-
         <button className="btn rounded-2xl bg-[#D91B7E] text-white">
           Sign Up
         </button>
