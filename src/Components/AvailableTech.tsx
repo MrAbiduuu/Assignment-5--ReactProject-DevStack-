@@ -1,20 +1,48 @@
-import React from "react";
+import { useState } from "react";
 import type { dataTypes } from "../Types/Types";
 import { FaStar } from "react-icons/fa";
+import { GiCheckMark } from "react-icons/gi";
+import { Bounce, toast, ToastContainer } from "react-toastify";
 
 const AvailableTech = ({ Technology }) => {
+  const [isTechAdded, setIsTechAdded] = useState<string[]>([]);
+
+  const handleAddTech = (Tech: dataTypes, name: string) => {
+    setIsTechAdded((prev) => [...prev, name]);
+
+    toast.success(`${Tech.name} Added Successfully`, {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
+  };
+
   return (
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
       <div className="lg:col-span-3">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {Technology.map((Tech: dataTypes) => (
-            <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+            <div
+              key={Tech.name}
+              className={`rounded-2xl border bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${
+                isTechAdded.includes(Tech.name)
+                  ? "border-pink-600"
+                  : "border-gray-200"
+              }`}
+            >
               <div className="flex items-center justify-between">
                 <img
                   className="h-12 w-12 object-contain"
                   src={Tech.icon}
                   alt={Tech.name}
                 />
+
                 <p
                   className="rounded-full px-3 py-1 text-sm"
                   style={{
@@ -37,7 +65,7 @@ const AvailableTech = ({ Technology }) => {
               <hr className="my-5 border-gray-200" />
 
               <div className="flex items-center justify-between gap-3 text-sm text-gray-500">
-                <p className="bg-gray-100 py-1 px-2 rounded-b-sm text-[#475569] font-semibold">
+                <p className="rounded-b-sm bg-gray-100 px-2 py-1 font-semibold text-[#475569]">
                   {Tech.category}
                 </p>
 
@@ -49,24 +77,38 @@ const AvailableTech = ({ Technology }) => {
                 </p>
               </div>
 
-              <div className="mt-5">
-                <button className="btn btn-active w-full rounded-xl bg-black text-white transition-all duration-300 hover:bg-gray-800">
-                  Add to stack
-                </button>
-              </div>
+              <button
+                onClick={() => handleAddTech(Tech, Tech.name)}
+                disabled={isTechAdded.includes(Tech.name)}
+                className="btn btn-active mt-4 w-full rounded-xl bg-black text-white transition-all duration-300 hover:bg-gray-800 disabled:cursor-not-allowed! disabled:bg-gray-400 disabled:text-gray-200 disabled:hover:bg-gray-400"
+              >
+                {isTechAdded.includes(Tech.name) ? (
+                  <p className="flex items-center gap-2">
+                    <GiCheckMark />
+                    Added to stack
+                  </p>
+                ) : (
+                  <p>Add to stack</p>
+                )}
+              </button>
             </div>
           ))}
         </div>
       </div>
+
       <div className="lg:col-span-1">
         <div className="rounded-2xl border p-6">
           <h2 className="text-2xl font-bold">Your Stack</h2>
-          <p className="text-[#94A3B8] py-4">No technology selected yet</p>
-          <p className="w-full rounded-3xl p-8 text-center text-[#94A3B8] border">
+
+          <p className="py-4 text-[#94A3B8]">No technology selected yet</p>
+
+          <p className="w-full rounded-3xl border p-8 text-center text-[#94A3B8]">
             Your stack is Empty
           </p>
         </div>
       </div>
+
+      <ToastContainer />
     </div>
   );
 };
