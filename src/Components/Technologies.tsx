@@ -10,7 +10,7 @@ const Technologies = ({ TechPromise }: TechProps) => {
   const Technology = use(TechPromise);
   console.log(Technology);
   return (
-    <div className="mx-auto min-h-150 max-w-7xl items-center px-6 py-16 grid-cols-1">
+    <div className="mx-auto min-h-150 max-w-7xl items-center px-6 pt-10 pb-15 grid-cols-1">
       <div className="py-10">
         <h1 className="font-bold text-3xl">
           Explore the

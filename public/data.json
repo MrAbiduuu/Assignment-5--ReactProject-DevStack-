@@ -28,7 +28,7 @@
     "category": "Language",
     "type" : "fast",
     "description": "A versatile programming language for creating dynamic web applications.",
-    "icon": "https://www.clipartmax.com/png/middle/470-4707396_javascript-icon-html-css-js-icons.png",
+    "icon": "https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png",
     "environment" : "Intermediate",
     "color": "#EA580C",
     "rating" : 4.8
@@ -39,7 +39,7 @@
     "category": "Styling",
     "type" : "",
     "description": "A utility-first CSS framework for rapidly building modern interfaces.",
-    "icon": "tailwind",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa62eb49bsXKvUm8fzxqacVBUVGxEGhr5VfgmwKYS-zH60cQaDT2SHzpw&s=10",
     "environment" : "Intermediate",
     "color": "",
     "rating" : 4.9
@@ -50,7 +50,7 @@
     "category": "Backend",
     "type" : "standard",
     "description": "A JavaScript runtime used to build scalable backend applications.",
-    "icon": "nodejs",
+    "icon": "https://cdn.iconscout.com/icon/free/png-256/free-nodejs-icon-svg-download-png-226035.png",
     "environment" : "Intermediate",
     "color": "#339933",
     "rating" : 4.8
@@ -61,7 +61,7 @@
     "category": "Backend",
     "type" : "top SQL",
     "description": "A lightweight Node.js framework for building APIs and web servers.",
-    "icon": "express",
+    "icon": "https://btkpawqujqtivqwwpzhk.supabase.co/storage/v1/object/public/uploads/tools/1771682134403-849889495.webp",
     "environment" : "Intermediate",
     "color": "#2563EB",
     "rating" : 4.9
@@ -72,7 +72,7 @@
     "category": "Database",
     "type" : "chase",
     "description": "A flexible NoSQL database designed for modern applications.",
-    "icon": "mongodb",
+    "icon": "https://www.opc-router.de/wp-content/uploads/2021/03/mongodb_thumbnail.png",
     "environment" : "Beginner-friendly",
     "color": "#DC2626",
     "rating" : 4.8
@@ -83,7 +83,7 @@
     "category": "Database",
     "type" : "ubiquitos",
     "description": "A powerful open-source relational database management system.",
-    "icon": "postgresql",
+    "icon": "https://images.icon-icons.com/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png",
     "environment" : "Beginner-friendly",
     "color": "#D97706",
     "rating" : 4.9
@@ -94,7 +94,7 @@
     "category": "Tools",
     "type" : "essential",
     "description": "A distributed version control system for tracking code changes.",
-    "icon": "git",
+    "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-Black.png",
     "environment" : "Intermediate",
     "color": "#0284C7",
     "rating" : 4.9
@@ -105,7 +105,7 @@
     "category": "Tools",
     "type" : "rebust",
     "description": "A platform for hosting, collaborating on, and managing Git repositories.",
-    "icon": "github",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
     "environment" : "Intermediate",
     "color": "#0284C7",
     "rating" : 4.6
@@ -116,7 +116,7 @@
     "category": "Build Tool",
     "type" : "modern",
     "description": "A fast modern build tool for frontend development.",
-    "icon": "vite",
+    "icon": "https://cdn.iconscout.com/icon/free/png-256/free-vite-icon-svg-download-png-14548000.png?f=webp&w=128",
     "environment" : "Beginner-friendly",
     "color": "#0891B2",
     "rating" : 4.9
@@ -127,7 +127,7 @@
     "category": "Framework",
     "type" : "container",
     "description": "A React framework for building fast and production-ready web applications.",
-    "icon": "nextjs",
+    "icon": "https://cdn.creazilla.com/icons/3254134/nextjs-icon-icon-sm.png",
     "environment" : "Intermediate",
     "color": "#0284C7",
     "rating" : 4.9
