@@ -30,7 +30,19 @@ const AvailableTech = ({ Technology }) => {
     setStack([]);
     setIsTechAdded([]);
 
-    toast.success("All technologies removed", {
+    toast.error("All technologies removed", {
+      position: "bottom-right",
+      autoClose: 3000,
+      theme: "light",
+      transition: Bounce,
+    });
+  };
+
+  const handleDeleteTech = (name: string) => {
+    setStack((prev) => prev.filter((Tech) => Tech.name !== name));
+    setIsTechAdded((prev) => prev.filter((techName) => techName !== name));
+
+    toast.error(`You removed ${name} from stack`, {
       position: "bottom-right",
       autoClose: 3000,
       theme: "light",
@@ -115,7 +127,7 @@ const AvailableTech = ({ Technology }) => {
         <div className="rounded-2xl border p-6">
           <h2 className="text-2xl font-bold">Your Stack</h2>
 
-          <p className="py-4 mt-2 text-sm text-[#94A3B8]">
+          <p className="py-3 text-sm text-[#94A3B8]">
             {stack.length === 0
               ? "No technology"
               : stack.length === 1
@@ -125,18 +137,16 @@ const AvailableTech = ({ Technology }) => {
           </p>
 
           {stack.length === 0 ? (
-            <>
-              <p className="w-full rounded-3xl border p-8 text-center text-[#94A3B8]">
-                Your stack is Empty
-              </p>
-            </>
+            <p className="w-full rounded-3xl border p-8 text-center text-[#94A3B8]">
+              Your stack is Empty
+            </p>
           ) : (
             <>
               <div className="mt-5 space-y-3">
                 {stack.map((Tech) => (
                   <div
                     key={Tech.name}
-                    className="flex items-center justify-between gap-3 rounded-xl border py-1.5 px-3"
+                    className="flex items-center justify-between gap-3 rounded-xl border border-gray-300 px-3 py-1.5"
                   >
                     <div className="flex gap-2">
                       <img
@@ -150,14 +160,20 @@ const AvailableTech = ({ Technology }) => {
                         <p className="text-sm text-gray-500">{Tech.type}</p>
                       </div>
                     </div>
-                    <RiDeleteBin6Line />
+
+                    <button
+                      onClick={() => handleDeleteTech(Tech.name)}
+                      className="text-red-400 transition-all duration-200 hover:scale-110 hover:text-red-600"
+                    >
+                      <RiDeleteBin6Line />
+                    </button>
                   </div>
                 ))}
               </div>
 
               <button
                 onClick={handleRemoveAll}
-                className="mt-5 w-full rounded-xl bg-red-500 px-4 py-3 font-semibold text-white transition-all duration-300 hover:bg-red-600"
+                className="mt-8 w-full rounded-xl border border-[#ED8C85] px-3 py-2 font-bold text-[#D82C20] transition-all duration-300 hover:bg-red-50"
               >
                 Remove All
               </button>
