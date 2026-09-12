@@ -1,3 +1,4 @@
+
 [
   {
     "id": 1,
@@ -5,7 +6,7 @@
     "category": "Frontend",
     "type" : "popular",
     "description": "A JavaScript library for building fast and interactive user interfaces.",
-    "icon": "react",
+    "icon": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
     "environment" : "Beginner-friendly",
     "color": "#0EA5E9",
     "rating" : 4.9
@@ -16,7 +17,7 @@
     "category": "Language",
     "type" : "versatile",
     "description": "A strongly typed programming language built on top of JavaScript.",
-    "icon": "typescript",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRocZWVs_xOLPURyOTrr_aP47uCtB5uEkWzigyYYMiB2A&s=10",
     "environment" : "Beginner-friendly",
     "color": "#059669",
     "rating" : 4.8
@@ -27,7 +28,7 @@
     "category": "Language",
     "type" : "fast",
     "description": "A versatile programming language for creating dynamic web applications.",
-    "icon": "javascript",
+    "icon": "https://www.clipartmax.com/png/middle/470-4707396_javascript-icon-html-css-js-icons.png",
     "environment" : "Intermediate",
     "color": "#EA580C",
     "rating" : 4.8
