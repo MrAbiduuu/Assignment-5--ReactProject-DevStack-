@@ -16,7 +16,7 @@ const Banner = () => {
             Development Stack
           </h1>
 
-          <p className="order-3 mt-6 max-w-lg text-center text-lg leading-8 text-gray-500 lg:text-center">
+          <p className="order-3 mt-6 max-w-lg text-left text-lg leading-8 text-gray-500 lg:text-center">
             Explore fontend, backend, database, and tooling options, Compare
             them side by side and put together the stack that fits your next
             project
