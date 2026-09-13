@@ -12,6 +12,8 @@ As my **first React project**, DevStack is also a small reflection of my learnin
 
 ## 🛠️ Technologies Used
 
+* 🌐 **HTML5** — Structuring the web pages and content
+* 🎨 **CSS3** — Styling and visual presentation
 * ⚛️ **React.js** — Building the user interface and components
 * 🎨 **Tailwind CSS** — Styling and responsive design
 * 🌼 **DaisyUI** — UI components and design utilities
@@ -21,6 +23,7 @@ As my **first React project**, DevStack is also a small reflection of my learnin
 * 📄 **JSON** — Storing and managing technology data
 * ⚡ **Vite** — Fast development server and build tool
 * 🌐 **Netlify** — Deploying and hosting the web application
+
 
 
 ---
