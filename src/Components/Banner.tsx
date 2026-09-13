@@ -7,21 +7,22 @@ const Banner = () => {
       className="mx-auto flex min-h-150 max-w-7xl items-center px-6 py-16 lg:px-8"
     >
       <div className="grid w-full items-center gap-12 lg:grid-cols-2">
-        {/* Left Side */}
-        <div>
-          <p className="mb-4 text-5xl font-bold">Build Your Ideal</p>
+        <div className="contents lg:block">
+          <p className="order-1 mb-4 text-center text-5xl font-bold lg:text-left">
+            Build Your Ideal
+          </p>
 
-          <h1 className="text-5xl font-bold bg-linear-to-r from-orange-500 via-pink-500 to-indigo-600 bg-clip-text text-transparent">
+          <h1 className="order-2 text-center text-5xl font-bold bg-linear-to-r from-orange-500 via-pink-500 to-indigo-600 bg-clip-text text-transparent lg:text-left">
             Development Stack
           </h1>
 
-          <p className="mt-6 max-w-lg text-lg leading-8 text-gray-500">
+          <p className="order-3 mt-6 max-w-lg text-center text-lg leading-8 text-gray-500 lg:text-center">
             Explore fontend, backend, database, and tooling options, Compare
             them side by side and put together the stack that fits your next
             project
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="order-5 mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
             <button className="bg-linear-to-r from-[#F97316] to-[#EC4899] rounded-lg bg-pink-500 px-6 py-3 font-semibold text-white transition hover:bg-pink-600">
               Explore Technologies
             </button>
@@ -32,8 +33,7 @@ const Banner = () => {
           </div>
         </div>
 
-        {/* Right Side */}
-        <div className="flex justify-center">
+        <div className="order-4 flex justify-center lg:order-0">
           <img
             src={BannerImg}
             alt="BannerImg"
