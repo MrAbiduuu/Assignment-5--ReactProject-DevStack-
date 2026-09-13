@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <footer className="mt-20 mx-auto max-w-7xl items-center px-6 py-16 ">
       <div className="flex justify-between mb-15">
-        {/* Dev stack  */}
         <div>
           <img src={Logo} alt="Dev stack" />
           <p className="my-4 text-[#64748B]">
@@ -19,7 +18,6 @@ const Footer = () => {
             <button className="btn bg-transparent">Linkedin</button>
           </div>
         </div>
-        {/* Product  */}
         <div className="text-[#64748B]">
           <h1 className="font-semibold text-xl text-[#0F172A] mb-5">Product</h1>
           <div className="grid grid-rows-3">
@@ -29,7 +27,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Reserved  */}
         <div className="text-[#64748B]">
           <h1 className="font-semibold text-xl text-[#0F172A] mb-5">
             Reserved
@@ -40,8 +37,6 @@ const Footer = () => {
             <a href="">Career</a>
           </div>
         </div>
-
-        {/* privacy  */}
         <div className="text-[#64748B]">
           <h1 className="font-semibold text-xl text-[#0F172A] mb-5">Privacy</h1>
           <div className="grid grid-rows-3">
